@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> St.raw/my-cart</title>
+    <link rel="shortcut icon" type="image/svg" href="assets/img/Logo web dev black-04.svg">
+    <link rel="stylesheet" href="cart-assets/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="cart-assets/css/desktop.css">
+    <link rel="stylesheet" href="cart-assets/css/nav.css">
+</head>
+<body>
+
+    <header class="logo-nav-wrapper header-shrink">
+        <a href="home.html"><img src="cart-assets/img/st.raw-header-logo.svg" alt="st.raw-logo" class="st-raw-logo"> </a>
+        <nav>
+            <div class="outer-menu">
+                <input class="checkbox-toggle" type="checkbox" />
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="">shop</a>
+                                 <ul>
+                                     <li><a href="product-metal.html">metal</a></li>
+                                     <li><a href="product-bamboo.html">bamboo</a>
+                                     </li>
+                                     <li><a href="product-silicone.html">silicone</a>
+                                     </li>
+                                     <li><a href="product-glass.html">glass</a>
+                                    </li>
+                                 </ul>
+                                </li>
+                                <li><a href="about-index.html">about</a></li>
+                                <li><a href="#">my cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--cart-items-details in a table--->
+    <section class="product-section-all-content">
+        <div class="header-wrapper">
+            <h2 class="header-name">Shopping Cart</h2>
+            <div class="header-second">
+                <ul>
+                    <li class="quick-links-header">Quick Links</li>
+                    <li> <a href="#">shipping & returns</a></li>
+                    <li> <a href="#">need assistance?</a></li>
+                    <li> <a href="#">subscriptions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cart-page">
+            <table class="main-table">
+                <tr class="table-header">
+                    <th>product</th>
+                    <th>quantity</th>
+                    <th>subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="cart-assets/img/bamboo-product-shot.jpg" alt="bamboo product shot selected">
+                            <div class="td-description">
+                                <h2> bamboo straws </h2>
+                                <small> Price:$5.00 ( 3 straws & pouch bundle) </small>
+                                <br>
+                                <a href="" class="remove-button">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" min="1" value="1" name="amount" id="amount" class="amount">
+                    </td>
+                    <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total" class="total"> </td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr class=>
+                        <td>Total</td>
+                        <td>
+                        <td><input type="number" step="0.01" min="0" value="0" readonly name="total" id="total2" class="total2"> </td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <button class="checkout-button button1">check out</button>
+    </section>
+    <section class="spacing">
+    </section>
+</body>
+<footer class="footer-padding">
+    <img src="cart-assets/img/st.raw-footer-logo.svg" alt="footer st.raw logo diagram">
+</footer>
+</html>
